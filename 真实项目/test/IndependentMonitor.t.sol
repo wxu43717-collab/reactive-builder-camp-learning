@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.29;
 import {Test} from "forge-std/Test.sol";
-import {MockSystem} from "./Camp.t.sol";
-import {FeeProxyFixture} from "./FuelPool.t.sol";
+import {MockSystem} from "./fixtures/FuelMocks.sol";
+import {FeeProxyFixture} from "./fixtures/FuelMocks.sol";
 import {IndependentMonitor, FuelBank} from "../src/gas-pool/IndependentMonitor.sol";
 import {AddExpenses,CheckAllowance,SealReceipt} from "../src/gas-pool/ExpenseStepsV2.sol";
 import {IReactive} from "@reactive/src/interfaces/IReactive.sol";
